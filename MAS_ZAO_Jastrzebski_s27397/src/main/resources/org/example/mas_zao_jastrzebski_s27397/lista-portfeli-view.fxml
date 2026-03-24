@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mas_zao_jastrzebski_s27397.controller.ListaPortfeliController">
+   <children>
+      <Label alignment="CENTER" layoutY="14.0" prefHeight="27.0" prefWidth="600.0" text="Lista Portfeli" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tabelaPortfeli" layoutX="-0.8" layoutY="41.0" prefHeight="247.0" prefWidth="599.0" AnchorPane.bottomAnchor="112.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="41.0">
+        <columns>
+          <TableColumn fx:id="kolNazwa" prefWidth="134.400026679039" text="Nazwa" />
+          <TableColumn fx:id="kolWartosc" prefWidth="231.1999969482422" text="Wartość" />
+            <TableColumn fx:id="kolZmiana" minWidth="4.79998779296875" prefWidth="145.5999755859375" text="Ostatnia Zmiana" />
+            <TableColumn fx:id="kolSzczegoly" minWidth="0.0" prefWidth="86.39990234375" text="Pokaż" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnPowrot" alignment="CENTER" layoutX="5.0" layoutY="335.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="178.0" text="Powrót do Widoku Głównego" textOverrun="CLIP" />
+   </children>
+</AnchorPane>
